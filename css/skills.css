@@ -1,0 +1,24 @@
+.skillslist{
+    display: flex;
+    margin-top: 15px ;
+  margin-bottom: 4px;
+  margin-left: 10px;
+  font-family: arial;
+  /* opacity: 0.8; */
+  font-weight: 900;
+
+  color: #ffbd39;
+}
+.progress{
+width: 900px;
+}
+.skillslist:hover{
+    opacity: 0.9;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .skillslist{
+    font-size: 15px;
+    }
+}
