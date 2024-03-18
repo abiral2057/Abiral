@@ -166,3 +166,4 @@ function nextSlide(){
 	// Set current slide to the new current slide
 	currentSlideIndex = nextSlideIndex;
 }
+

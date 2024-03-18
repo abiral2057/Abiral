@@ -10,7 +10,10 @@ body{
 #navitem:hover{
     transition: ease-in-out 0.4s;
     
-    color: rgb(199, 40, 40);
+    color: rgb(250, 172, 5);
+    text-decoration: underline ;
+    text-decoration-style: wavy;
+  text-decoration-thickness: 4px;
 }
 
 #navitem:active{
@@ -92,8 +95,8 @@ body{
   margin-top: 20px;
   }
   .img2{
-    width: 500px;
-  height: 600px;
+    /* width: 500px;
+  height: 600px; */
   filter: drop-shadow(5px 5px 5px #000);
 
   }

@@ -97,3 +97,12 @@ const utterThis = new SpeechSynthesisUtterance(enteredText);
     };
   })());
   
+
+  document.addEventListener("DOMContentLoaded", function() {
+    // Simulate loading time
+    setTimeout(function() {
+      document.getElementById('splash-screen').style.display = 'none';
+      document.getElementById('main-content').style.display = 'block';
+    }, 4000); // Adjust the time as per your requirement
+  });
+  
