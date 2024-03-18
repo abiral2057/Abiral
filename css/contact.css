@@ -1,0 +1,38 @@
+.grid-contact {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 8px;
+   
+    background-color:none;
+    padding: 10px;
+    margin: 2rem;
+  background: #eaebec;
+  opacity: 0.9;
+  border-radius: 15px;
+  }
+  .grid-contactitem2{
+    background: none;
+
+  }
+  
+  .grid-contactitem > div {
+    background-color: none;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  .relative{
+    margin-top: 10px;
+  }
+  @media only screen and (max-width: 768px) {
+    .grid-contact {
+        display: grid;
+        grid-template-columns: auto   ;
+       
+      }
+      .contact-image{
+        display: inline-flex;
+        justify-content: center;
+      }
+    }
