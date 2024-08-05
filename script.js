@@ -46,7 +46,7 @@ const utterThis = new SpeechSynthesisUtterance(enteredText);
      */
     function startAutoScroll() {
       intervalId = setInterval(() => {
-        currentCardIndex = (currentCardIndex + 1) % 3; // Assuming you have 3 cards
+        currentCardIndex = (currentCardIndex + 1) % 4; // Assuming you have 3 cards
         document.querySelectorAll(".cards .card")[currentCardIndex].click();
       }, 3000); // Change this value to adjust the auto-scroll speed (in milliseconds)
     }
@@ -80,15 +80,23 @@ const utterThis = new SpeechSynthesisUtterance(enteredText);
       cards[card].classList.add("card--center");
       if (card == 0) {
         cards[2].classList.add("card--left");
+        cards[3].classList.add("card--left");
         cards[1].classList.add("card--right");
       }
       if (card == 1) {
         cards[0].classList.add("card--left");
+        cards[3].classList.add("card--left");
         cards[2].classList.add("card--right");
       }
       if (card == 2) {
         cards[1].classList.add("card--left");
+        cards[3].classList.add("card--right");
         cards[0].classList.add("card--right");
+      }
+      if (card == 3) {
+        cards[2].classList.add("card--left");
+        cards[3].classList.add("card--left");
+        cards[1].classList.add("card--right");
       }
     }
   
